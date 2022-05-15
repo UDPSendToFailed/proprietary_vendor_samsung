@@ -1211,7 +1211,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.power.pasrmanager@1.0.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/tima_measurement_info:$(TARGET_COPY_OUT_VENDOR)/tima_measurement_info
+    vendor/samsung/gta2xlwifi/proprietary/vendor/tima_measurement_info:$(TARGET_COPY_OUT_VENDOR)/tima_measurement_info \
+    vendor/samsung/gta2xlwifi/proprietary/vendor/bin/hw/android.hardware.gnss@2.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.0-service-qti \
+    vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.0-service-qti.rc \
+    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.0-impl-qti.so
 
 PRODUCT_PACKAGES += \
     TimeService \
