@@ -1,0 +1,58 @@
+<!--
+-->
+<CameraConfigurationRoot>
+  <CameraModuleConfig>
+    <CameraId>0</CameraId>
+    <SensorName>s5k4h5yc</SensorName>
+    <ActuatorName>dw9807</ActuatorName>
+    <EepromName>dw9807</EepromName>
+    <OisName> </OisName>
+    <FlashName>pmic</FlashName>
+    <ChromatixName>s5k4h5yc_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>2.91</FocalLength>
+      <Focallengthfilm>27.55</Focallengthfilm>
+      <FNumber>1.9</FNumber>
+      <TotalFocusDistance>1.97</TotalFocusDistance>
+      <HorizontalViewAngle>63</HorizontalViewAngle>
+      <VerticalViewAngle>49</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+  <CameraModuleConfig>
+    <CameraId>1</CameraId>
+    <OisName> </OisName>
+    <SensorName>s5k5e3yx</SensorName>
+    <EepromName>lsi_s5k5e3yx</EepromName>
+    <FlashName>pmic</FlashName>
+    <ChromatixName>s5k5e3yx_f2_2_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>FRONT</Position>
+    <MountAngle>270</MountAngle>
+    <CSIInfo>
+      <CSIDCore>1</CSIDCore>
+      <LaneMask>0x7</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>1.92</FocalLength>
+      <Focallengthfilm>24</Focallengthfilm>
+      <FNumber>2.2</FNumber>
+      <TotalFocusDistance>23.08</TotalFocusDistance>
+      <HorizontalViewAngle>72.3</HorizontalViewAngle>
+      <VerticalViewAngle>57.2</VerticalViewAngle>
+      <MinFocusDistance>0.5</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+ </CameraConfigurationRoot>
+

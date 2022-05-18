@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<audio_effects_conf version="2.0" xmlns="http://schemas.android.com/audio/audio_effects_conf/v2_0">
+    <libraries>
+        <library name="tdm" path="libsamsungSoundbooster_tdm.so"/>
+    </libraries>
+
+    <effects>
+        <effect name="tdm" library="tdm" uuid="beb1d058-916a-4adf-9cfe-54ee5ba8c4a5"/>
+    </effects>
+</audio_effects_conf>
