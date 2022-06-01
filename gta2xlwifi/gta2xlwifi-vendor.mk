@@ -525,6 +525,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiagjni.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
+    vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayconfig.qti.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
@@ -710,6 +711,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemaids_vendor.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libois_lc898122.so:$(TARGET_COPY_OUT_VENDOR)/lib/libois_lc898122.so \
+    vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib/libops.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboptizoom.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libpa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpa.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
@@ -774,6 +776,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libsnaplite_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnaplite_wrapper.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libsomp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomp.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libsomxcore_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxcore_vendor.so \
+    vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspl.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libstr_capture_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstr_capture_core.so \
@@ -834,6 +837,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.1.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
+    vendor/samsung/gta2xlwifi/proprietary/vendor/lib/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@2.0.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.esepowermanager@1.0.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.0.so \
