@@ -12,7 +12,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/lib/libdeccfg.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdeccfg.so \
     vendor/samsung/gta2xlwifi/proprietary/lib/libhdcp2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhdcp2.so \
     vendor/samsung/gta2xlwifi/proprietary/lib/libprofileparamstorage.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libprofileparamstorage.so \
-    vendor/samsung/gta2xlwifi/proprietary/lib/libsavscmn.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsavscmn.so \
     vendor/samsung/gta2xlwifi/proprietary/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecnativefeature.so \
     vendor/samsung/gta2xlwifi/proprietary/lib/libsfextcp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsfextcp.so \
     vendor/samsung/gta2xlwifi/proprietary/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.display.color@1.0.so \
@@ -684,7 +683,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libsnaplite_native.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnaplite_native.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libsnaplite_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnaplite_wrapper.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libsomp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomp.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libsomxcore_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxcore_vendor.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspl.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
@@ -865,7 +863,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaoa.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libappclassifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappclassifier.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libarac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarac.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
@@ -1011,9 +1008,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno_sha1.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsavsac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsavsac.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsavscmn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsavscmn.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsavsvc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsavsvc.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libscalar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscalar.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor_stub.so \
@@ -1043,33 +1037,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_reg.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libskewknob.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskewknob.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsnaace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnaace.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsnamrnb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnamrnb.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsnamrwb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnamrwb.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomx263dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomx263dsw.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomx264dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomx264dsw.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxaacd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxaacd.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxadpcmd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxadpcmd.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxamrd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxamrd.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxcmn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxcmn.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxcore_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxcore_vendor.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxflacd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxflacd.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxhevcdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxhevcdsw.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxmp3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxmp3d.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxmp43d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxmp43d.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxmp4vdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxmp4vdsw.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxnaace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxnaace.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxvc1dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxvc1dsw.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxvp8d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxvp8d.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxwmad.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxwmad.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxwmv7d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxwmv7d.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsomxwmv8d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxwmv8d.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspl.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libstreamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstreamparser.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsxqk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsxqk.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
