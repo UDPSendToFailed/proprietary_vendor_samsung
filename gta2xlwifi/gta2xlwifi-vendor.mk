@@ -174,7 +174,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/hw/android.hardware.gnss@2.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.0-impl-qti.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/hw/android.hardware.graphics.allocator@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@2.0-impl.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/hw/android.hardware.sensors@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.sensors@1.0-impl.so \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/lib/hw/camera.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8953.so \
+    vendor/samsung/gta2xlwifi/proprietary/vendor/lib/hw/camera.legacy.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.legacy.msm8953.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/hw/gatekeeper.mdfpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.mdfpp.so \
     vendor/samsung/gta2xlwifi/proprietary/vendor/lib/hw/gatekeeper.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.msm8953.so \
