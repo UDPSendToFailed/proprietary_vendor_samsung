@@ -8463,9 +8463,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libhifills.so",
             ],
             shared_libs: [
+                "libprocessgroup",
                 "libdemangle",
                 "liblog",
-                "libprocessgroup",
+                "libcutils",
                 "libz",
                 "libc++",
                 "libc",
@@ -13704,9 +13705,8 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/pm-service",
             ],
             shared_libs: [
-                "libutils-v33",
                 "libcutils",
-                "libutils",
+                "libutils-v33",
                 "liblog",
                 "libbinder",
                 "libqmi_cci",
