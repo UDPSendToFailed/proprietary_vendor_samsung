@@ -85,7 +85,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw
 
 PRODUCT_PACKAGES += \
-    com.qualcomm.qti.ant@1.0 \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
@@ -93,10 +92,8 @@ PRODUCT_PACKAGES += \
     libQTapGLES \
     libq3dtools_adreno \
     libq3dtools_esx \
-    android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gnss@2.0-impl-qti \
     android.hardware.sensors@1.0-impl \
-    com.qualcomm.qti.ant@1.0-impl \
     gatekeeper.msm8953 \
     power.qcom \
     thermal.msm8953 \
@@ -204,7 +201,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@2.1 \
     vendor.qti.gnss@3.0-service \
     vendor.qti.gnss@3.0 \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.soter@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
@@ -445,24 +441,27 @@ PRODUCT_PACKAGES += \
     libswgamedap \
     libswvqe \
     vendor.qti.hardware.alarm@1.0 \
-    vendor.samsung.hardware.bluetooth@2.0 \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.teeregistry@1.0 \
-    audio.bluetooth_qti.default \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_sar@1.0-impl \
+    com.qualcomm.qti.ant@1.0 \
+    android.hardware.bluetooth@1.0-impl-qti \
+    com.qualcomm.qti.ant@1.0-impl \
+    vendor.qti.hardware.bluetooth_sar@1.1-impl \
     vendor.qti.hardware.btconfigstore@1.0-impl \
+    vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     libGPQTEEC_vendor \
     libQTEEConnector_vendor \
     libaoa \
-    libbluetooth_audio_session_qti \
     libbtnv \
     libdlbdsservice \
     libminksocket \
     libsemnativecarrierfeature \
+    libsoc_helper \
     vendor.dolby.hardware.dms@2.0-impl \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.qteeconnector@1.0 \
     libadsp_hvx_add_constant \
     libadsp_hvx_skel \
