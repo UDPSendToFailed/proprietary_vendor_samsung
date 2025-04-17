@@ -5425,7 +5425,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "camera.legacy.msm8953",
+    name: "camera.msm8953",
     owner: "samsung",
     strip: {
         none: true,
@@ -5433,7 +5433,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/hw/camera.legacy.msm8953.so",
+                "proprietary/vendor/lib/hw/camera.msm8953.so",
             ],
             shared_libs: [
                 "liblog",

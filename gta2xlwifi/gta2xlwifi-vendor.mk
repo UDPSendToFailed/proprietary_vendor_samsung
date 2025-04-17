@@ -202,7 +202,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.soter@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
-    camera.legacy.msm8953 \
+    camera.msm8953 \
     gatekeeper.mdfpp \
     sensors.msm8953 \
     sound_trigger.primary.msm8953 \
