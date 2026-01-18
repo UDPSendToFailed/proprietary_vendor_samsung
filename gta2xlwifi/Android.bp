@@ -12549,7 +12549,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_hvx_add_constant",
+    name: "vendor_lib_rfsa_adsp_libadsp_hvx_add_constant_so",
     filename: "libadsp_hvx_add_constant.so",
     owner: "samsung",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so",
@@ -12558,7 +12558,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_hvx_skel",
+    name: "vendor_lib_rfsa_adsp_libadsp_hvx_skel_so",
     filename: "libadsp_hvx_skel.so",
     owner: "samsung",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so",
@@ -12567,7 +12567,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_hvx_stats",
+    name: "vendor_lib_rfsa_adsp_libadsp_hvx_stats_so",
     filename: "libadsp_hvx_stats.so",
     owner: "samsung",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_stats.so",
@@ -12576,7 +12576,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_hvx_zzhdr_BGGR",
+    name: "vendor_lib_rfsa_adsp_libadsp_hvx_zzhdr_BGGR_so",
     filename: "libadsp_hvx_zzhdr_BGGR.so",
     owner: "samsung",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_BGGR.so",
@@ -12585,7 +12585,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_hvx_zzhdr_RGGB",
+    name: "vendor_lib_rfsa_adsp_libadsp_hvx_zzhdr_RGGB_so",
     filename: "libadsp_hvx_zzhdr_RGGB.so",
     owner: "samsung",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_RGGB.so",
@@ -12594,7 +12594,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libapps_mem_heap",
+    name: "vendor_lib_rfsa_adsp_libapps_mem_heap_so",
     filename: "libapps_mem_heap.so",
     owner: "samsung",
     src: "proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so",
@@ -12603,7 +12603,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libdspCV_skel",
+    name: "vendor_lib_rfsa_adsp_libdspCV_skel_so",
     filename: "libdspCV_skel.so",
     owner: "samsung",
     src: "proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so",
@@ -12612,7 +12612,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libfastcvadsp",
+    name: "vendor_lib_rfsa_adsp_libfastcvadsp_so",
     filename: "libfastcvadsp.so",
     owner: "samsung",
     src: "proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so",
@@ -12621,7 +12621,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libfastcvadsp_skel",
+    name: "vendor_lib_rfsa_adsp_libfastcvadsp_skel_so",
     filename: "libfastcvadsp_skel.so",
     owner: "samsung",
     src: "proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so",
@@ -12887,12 +12887,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.sensors@1.0-service",
+    name: "android.hardware.sensors@1.0-service.samsung",
     owner: "samsung",
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.sensors@1.0-service",
+                "proprietary/vendor/bin/hw/android.hardware.sensors@1.0-service.samsung",
             ],
             shared_libs: [
                 "liblog",
