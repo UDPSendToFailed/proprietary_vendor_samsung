@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/gta2xlwifi
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/app/mcRegistry/07010000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07010000000000000000000000000000.tlbin \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/General_cal.acdb \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/Global_cal.acdb \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/Handset_cal.acdb \
@@ -24,7 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.0-service-qti.rc \
+    vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
@@ -34,8 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/vendor.trustonic.tee@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.0-service.rc \
-    vendor/samsung/gta2xlwifi/proprietary/vendor/etc/init/vendor.trustonic.teeregistry@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.teeregistry@1.0-service.rc \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/samsung/gta2xlwifi/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -86,15 +83,15 @@ PRODUCT_PACKAGES += \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
-    libQTapGLES \
     libq3dtools_adreno \
     libq3dtools_esx \
-    android.hardware.gnss@2.0-impl-qti \
+    android.hardware.gnss@2.1-impl-qti \
     gatekeeper.msm8953 \
     power.qcom \
     thermal.msm8953 \
-    vendor.qti.gnss@3.0-impl \
+    vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
+    vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
     vulkan.adreno \
@@ -105,7 +102,6 @@ PRODUCT_PACKAGES += \
     libGPreqcancel_svc \
     libOpenCL \
     libQSEEComAPI \
-    libSecureUILib \
     libStDrvInt \
     libacdb-fts \
     libacdbloader \
@@ -114,15 +110,20 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
+    libasn1cper \
+    libasn1crt \
+    libasn1crtx \
     libaudcal \
     libbatching \
-    libbccQTI \
     libc2d30_bltlib \
+    libcdfw \
+    libcdfw_remote_api \
     libcdsp_default_listener \
     libcdsprpc \
     libdapparamstorage \
     libdataitems \
     libdiag \
+    libdrmfs \
     libdrmtime \
     libdsutils \
     libfastcrc \
@@ -135,16 +136,17 @@ PRODUCT_PACKAGES += \
     libgnss \
     libgnsspps \
     libgps.utils \
-    libgpustats \
     libgsl \
     libhdr_tm \
     libidl \
     libizat_client_api \
     libizat_core \
+    libjson \
     liblbs_core \
     libllvm-glnext \
     libloc_api_v02 \
     libloc_core \
+    libloc_socket \
     liblocation_api \
     liblocationservice \
     liblocationservice_glue \
@@ -152,11 +154,11 @@ PRODUCT_PACKAGES += \
     liblowi_wifihal \
     libmdmdetect \
     libmdsprpc \
-    libmmosal_proprietary \
     libmulawdec \
     libpdmapper \
     libperipheral_client \
     libpvr \
+    libqcc_file_agent \
     libqdi \
     libqdma_file_agent \
     libqisl \
@@ -165,8 +167,12 @@ PRODUCT_PACKAGES += \
     libqmi_client_helper \
     libqmi_client_qmux \
     libqmi_common_so \
+    libqmi_csi \
     libqmi_encdec \
+    libqmi_legacy \
     libqmiservices \
+    libqrtr \
+    libqsocket \
     librpmb \
     libscalar \
     libsdedrm \
@@ -175,9 +181,6 @@ PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libsdmextension \
     libsdsprpc \
-    libsecnativefeature \
-    libsecureui \
-    libsecureui_svcsock \
     libssd \
     libsynergy_loc_api \
     libsysmon_cdsp_skel \
@@ -185,6 +188,8 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libtinyxml2_1 \
     libxtadapter \
+    libxtwifi_server_protocol \
+    libxtwifi_server_protocol_uri_v3 \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -195,18 +200,20 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@1.2 \
     vendor.qti.gnss@2.0 \
     vendor.qti.gnss@2.1 \
-    vendor.qti.gnss@3.0-service \
     vendor.qti.gnss@3.0 \
+    vendor.qti.gnss@4.0-service \
+    vendor.qti.gnss@4.0 \
+    vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.qccsyshal@1.0 \
+    vendor.qti.hardware.qccvndhal@1.0-halimpl \
+    vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.soter@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
-    camera.msm8953 \
     gatekeeper.mdfpp \
     sensors.msm8953 \
     sound_trigger.primary.msm8953 \
-    vendor.samsung.hardware.gnss@2.0-impl-sec \
     libMOTION \
-    libMcClient \
     libactuator_dw9807 \
     libadm \
     libadpcmdec \
@@ -301,8 +308,6 @@ PRODUCT_PACKAGES += \
     libchromatix_s5k5e3yx_f2_2_zsl_video_3a \
     libcpion \
     libdeccfg \
-    libdisplayconfig.qti \
-    libdrmfs \
     libdsd2pcm \
     libflash_pmic \
     libhdcpsrm \
@@ -314,7 +319,6 @@ PRODUCT_PACKAGES += \
     libllvd_smore \
     libllvd_sw_tnr \
     libmm-hdcpmgr \
-    libmm-qcamera \
     libmmcamera2_c2d_module \
     libmmcamera2_cpp_module \
     libmmcamera2_dcrf \
@@ -344,7 +348,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_faceproc2 \
     libmmcamera_hdr_gb_lib \
     libmmcamera_imglib \
-    libmmcamera_interface \
     libmmcamera_isp_abf40 \
     libmmcamera_isp_bcc40 \
     libmmcamera_isp_be_stats44 \
@@ -399,34 +402,25 @@ PRODUCT_PACKAGES += \
     libmmcamera_trueportrait_lib \
     libmmcamera_ubifocus_lib \
     libmmjpeg \
-    libmmjpeg_interface \
     libmmqjpeg_codec \
     libmmqjpegdma \
     liboemcrypto \
-    libops \
     liboptizoom \
     libqcci_legacy \
     libqcmaputils \
-    libqdma \
-    libqmi_csi \
-    libqomx_core \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
-    libqrtr \
-    libqsocket \
     libremosaic_daemon \
     libremosaiclib \
     libseemore \
     libsomp \
-    libspl \
     libstagefright_soft_ac4dec \
     libstagefright_soft_ddpdec \
     libstr_capture_core \
     libstr_capture_interface \
     libstr_preview_core \
     libstr_preview_interface \
-    libthermalioctl \
     libtrueportrait \
     libubifocus \
     libuniplugin \
@@ -437,9 +431,6 @@ PRODUCT_PACKAGES += \
     libswgamedap \
     libswvqe \
     vendor.qti.hardware.alarm@1.0 \
-    vendor.samsung.hardware.gnss@2.0 \
-    vendor.trustonic.tee@1.0 \
-    vendor.trustonic.teeregistry@1.0 \
     com.qualcomm.qti.ant@1.0 \
     android.hardware.bluetooth@1.0-impl-qti \
     com.qualcomm.qti.ant@1.0-impl \
@@ -453,7 +444,6 @@ PRODUCT_PACKAGES += \
     libbtnv \
     libdlbdsservice \
     libminksocket \
-    libsemnativecarrierfeature \
     libsoc_helper \
     vendor.dolby.hardware.dms@2.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.0 \
@@ -470,16 +460,16 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libfastcvadsp_skel_so \
     TimeService \
     android.hardware.drm-service.widevine.xml \
-    android.hardware.gnss@2.0-service-qti.xml \
+    android.hardware.gnss@2.1-service-qti.xml \
     manifest_vendor.dolby.hardware.dms.xml \
-    vendor.qti.gnss@3.0-service.xml \
+    vendor.qti.gnss@4.0-service.xml \
     adsprpcd \
     cdsprpcd \
     cnss-daemon \
     hvdcp_opti \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm-service.widevine \
-    android.hardware.gnss@2.0-service-qti \
+    android.hardware.gnss@2.1-service-qti \
     mfgloader \
     vendor.display.color@1.0-service \
     vendor.dolby.hardware.dms@2.0-service \
@@ -487,20 +477,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.soter@1.0-service \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
-    vendor.trustonic.tee@1.0-service \
-    vendor.trustonic.teeregistry@1.0-service \
     init.qcom.sensors \
     init.qti.qseecomd \
     irsc_util \
     loc_launcher \
     lowi-server \
-    mcDriverDaemon \
-    mm-qcamera-app \
     mm-qcamera-daemon \
-    mm-qjpeg-dec-test \
-    mm-qjpeg-enc-test \
-    mm-qomx-idec-test \
-    mm-qomx-ienc-test \
     msm_irqbalance \
     pm-proxy \
     pm-service \
@@ -512,7 +494,9 @@ PRODUCT_PACKAGES += \
     time_client \
     time_daemon \
     vendor.qti.hardware.soter@1.0-provision \
-    xtra-daemon
+    xtra-daemon \
+    xtwifi-client \
+    xtwifi-inet-agent
 
 PRODUCT_PACKAGES += \
     vendor_lib_libEGL_adreno_so \
