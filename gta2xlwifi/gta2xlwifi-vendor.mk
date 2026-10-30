@@ -213,6 +213,7 @@ PRODUCT_PACKAGES += \
     gatekeeper.mdfpp \
     sensors.msm8953 \
     sound_trigger.primary.msm8953 \
+    vendor.samsung.hardware.gnss@2.0-impl-sec \
     libMOTION \
     libactuator_dw9807 \
     libadm \
@@ -431,6 +432,7 @@ PRODUCT_PACKAGES += \
     libswgamedap \
     libswvqe \
     vendor.qti.hardware.alarm@1.0 \
+    vendor.samsung.hardware.gnss@2.0 \
     com.qualcomm.qti.ant@1.0 \
     android.hardware.bluetooth@1.0-impl-qti \
     com.qualcomm.qti.ant@1.0-impl \

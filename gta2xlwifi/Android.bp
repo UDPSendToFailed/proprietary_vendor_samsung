@@ -2469,6 +2469,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libloc_core",
                 "libgps.utils",
+                "libsemnativecarrierfeature",
                 "libc++",
                 "libc",
                 "libm",
@@ -2556,6 +2557,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libprocessgroup",
+                "libsemnativecarrierfeature",
                 "libc++",
                 "libc",
                 "libm",
@@ -2950,6 +2952,7 @@ cc_prebuilt_library_shared {
                 "libloc_core",
                 "libgps.utils",
                 "liblog",
+                "libsemnativecarrierfeature",
                 "libc++",
                 "libc",
                 "libm",
@@ -5971,6 +5974,40 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libtinyalsa",
                 "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.gnss@2.0-impl-sec",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libhidlbase",
+                "libcutils",
+                "libutils",
+                "vendor.samsung.hardware.gnss@2.0",
+                "libbase",
+                "libloc_core",
+                "libgps.utils",
+                "liblocation_api",
                 "libc++",
                 "libc",
                 "libm",
@@ -11906,6 +11943,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.gnss@2.0",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.samsung.hardware.gnss@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.qualcomm.qti.ant@1.0",
     owner: "samsung",
     strip: {
@@ -12751,7 +12816,7 @@ cc_prebuilt_binary {
     name: "android.hardware.gnss@2.1-service-qti",
     owner: "samsung",
     target: {
-        android_arm64: {
+        android_arm: {
             srcs: [
                 "proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti",
             ],
@@ -12767,6 +12832,7 @@ cc_prebuilt_binary {
                 "android.hardware.gnss@1.1",
                 "android.hardware.gnss@2.0",
                 "android.hardware.gnss@2.1",
+                "vendor.samsung.hardware.gnss@2.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -12774,7 +12840,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "64",
+    compile_multilib: "32",
     strip: {
         none: true,
     },
@@ -13049,7 +13115,7 @@ cc_prebuilt_binary {
     name: "loc_launcher",
     owner: "samsung",
     target: {
-        android_arm64: {
+        android_arm: {
             srcs: [
                 "proprietary/vendor/bin/loc_launcher",
             ],
@@ -13066,7 +13132,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "64",
+    compile_multilib: "32",
     strip: {
         none: true,
     },
@@ -13078,7 +13144,7 @@ cc_prebuilt_binary {
     name: "lowi-server",
     owner: "samsung",
     target: {
-        android_arm64: {
+        android_arm: {
             srcs: [
                 "proprietary/vendor/bin/lowi-server",
             ],
@@ -13098,7 +13164,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "64",
+    compile_multilib: "32",
     strip: {
         none: true,
     },
@@ -13459,7 +13525,7 @@ cc_prebuilt_binary {
     name: "xtra-daemon",
     owner: "samsung",
     target: {
-        android_arm64: {
+        android_arm: {
             srcs: [
                 "proprietary/vendor/bin/xtra-daemon",
             ],
@@ -13485,7 +13551,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "64",
+    compile_multilib: "32",
     strip: {
         none: true,
     },
